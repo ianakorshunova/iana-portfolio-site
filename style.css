@@ -663,3 +663,32 @@ h3,
     font-size: 14px;
   }
 }
+
+@media (max-width: 700px) {
+  body {
+    font-size: 20px;
+  }
+
+  p,
+  li,
+  .project-type,
+  .project-subtitle,
+  .contact-links p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .status {
+    font-size: 13px;
+  }
+
+  .output-box,
+  .lumi-demo,
+  .chat-box {
+    font-size: 15px;
+  }
+}
