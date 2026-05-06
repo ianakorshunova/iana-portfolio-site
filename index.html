@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iana Korshunova — Language & Tech Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+  <p class="logo">Iana Korshunova</p>
+
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+  <h1>Iana Korshunova</h1>
+  <p class="subtitle">Working languages: Russian, English, Chinese.</p>
+
+  <section class="about" id="about">
+  <p class="eyebrow">Language · Subtitles · NLP tools</p>
+  <h2>About me</h2>
+  <p class="lead">
+    Native Russian speaker with experience in teaching, subtitling and making simple rule-based NLP-projects.
+  </p>
+  <p>
+    My current focus is building practical language-tech tools that connect
+    language learning, localization, and automation.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  
+  <div class="projects-grid">
+  <div class="project-card">
+    <h3>Marcel</h3>
+    <p class="project-type">Rule-based NLP · Chinese grammar</p>
+    <p>A Chinese classifier checker that detects missing or incorrect measure words and returns structured JSON feedback.</p>
+    <p class="status">Rule-based prototype</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Lucien</h3>
+    <p class="project-type">Chinese NLP · Sentence analysis</p>
+    <p>A Chinese sentence chunker that splits sentences into meaningful parts and labels time, negation, degree adverbs, and descriptions.</p>
+    <p class="status">Experimental parser</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Lumi</h3>
+    <p class="project-type">Russian NLP · Date extraction</p>
+    <p>A Russian appointment bot that recognizes dates and times from natural language, including “tomorrow”, weekdays, and next-week phrases.</p>
+    <p class="status">Prototype bot</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Larry</h3>
+    <p class="project-type">Chatbot · Emotional support</p>
+    <p>An empathetic Telegram chat companion that responds to emotional triggers and keeps simple conversation state.</p>
+    <p class="status">Conversation prototype</p>
+  </div>
+</div>
+</section>
+
+<section class="project-detail" id="marcel-detail">
+  <div class="project-detail-text">
+    <p class="eyebrow">Project spotlight</p>
+    <h2>Marcel</h2>
+    <p class="project-subtitle">Rule-based NLP · Chinese grammar</p>
+
+    <ul class="feature-list">
+      <li>Detects missing classifiers</li>
+      <li>Suggests corrections</li>
+      <li>Returns structured JSON output</li>
+    </ul>
+  </div>
+
+  <div class="project-detail-image">
+    <div class="output-box marcel-output">
+      <p><span>Input:</span> 三漂亮猫</p>
+      <p><span>Error:</span> Missing classifier</p>
+      <p><span>Correction:</span> 三只漂亮猫</p>
+      <p><span>Feedback:</span> You missed a classifier 1 time</p>
+      <p><span>Advice:</span> Use a classifier after numbers in Chinese</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-detail" id="lucien-detail">
+  <div class="project-detail-text">
+    <p class="eyebrow">Project spotlight</p>
+    <h2>Lucien</h2>
+    <p class="project-subtitle">Chinese NLP · Sentence chunking</p>
+
+    <ul class="feature-list">
+      <li>Splits Chinese sentences into meaningful chunks</li>
+      <li>Labels time words, negation, degree adverbs, and descriptions</li>
+      <li>Helps explain sentence structure in a learner-friendly way</li>
+    </ul>
+  </div>
+
+<div class="project-detail-image">
+  <div class="output-box lucien-output">
+    <p><span>Sentence:</span> 我今天一点也不累</p>
+    <p><span>Meaning:</span> The speaker is not tired at all today.</p>
+    <p><span>Tone:</span> strong_negative</p>
+    <p><span>Structure:</span> 我 + 今天 + 一点也不累</p>
+  </div>
+</div>
+</section>
+
+<section class="project-detail" id="lumi-detail">
+  <div class="project-detail-text">
+    <p class="eyebrow">Project spotlight</p>
+    <h2>Lumi</h2>
+    <p class="project-subtitle">Russian NLP · Date extraction</p>
+
+    <ul class="feature-list">
+      <li>Recognizes Russian phrases like “завтра”, “послезавтра”, and weekday expressions</li>
+      <li>Extracts appointment time from natural input</li>
+      <li>Stores and shows simple appointment records</li>
+    </ul>
+  </div>
+
+<div class="project-detail-image">
+  <div class="lumi-demo">
+    <div class="message user-msg">Вы: завтра в 10</div>
+    <div class="message bot-msg">Бот: ОК, записываю на завтра в 10:00 💛</div>
+
+    <div class="parsed-box">
+      <p><span>relative_date:</span> завтра</p>
+      <p><span>time:</span> 10:00</p>
+      <p><span>action:</span> create_appointment</p>
+    </div>
+
+    <div class="message user-msg">Вы: когда у меня запись</div>
+    <div class="message bot-msg">
+      Бот: Вот все твои записи 💛<br>
+      1. завтра в 10:00<br>
+      2. послезавтра в 15:00
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section class="project-detail" id="larry-detail">
+  <div class="project-detail-text">
+    <p class="eyebrow">Project spotlight</p>
+    <h2>Larry</h2>
+    <p class="project-subtitle">Chatbot · Emotional support</p>
+
+    <ul class="feature-list">
+      <li>Responds to simple emotional and small-talk triggers</li>
+      <li>Asks gentle follow-up questions to keep the conversation going</li>
+      <li>Uses basic conversation state to avoid repetitive replies</li>
+    </ul>
+  </div>
+
+  <div class="project-detail-image">
+    <div class="chat-box larry-output">
+      <p class="user-message">I watched Into the Badlands.</p>
+      <p class="bot-message">That sounds lovely 💛 What did you like about it?</p>
+
+      <p class="user-message">I liked the fight scenes.</p>
+      <p class="bot-message">I'm glad you enjoyed it 💛 What else made your day nice?</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>
+    Available for subtitling, localization QA, Chinese tutoring, and small language-tech projects.
+<div class="contact-links">
+  <p><span>Email:</span> iana.korshunova.work@gmail.com</p>
+  <p><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/iana-korshunova-1a47743a4">View LinkedIn profile</a></p>
+  <p><span>GitHub:</span> <a href="https://github.com/ianakorshunova">View GitHub profile</a></p>
+</div>
+</section>
+
+</body>
+</html>
